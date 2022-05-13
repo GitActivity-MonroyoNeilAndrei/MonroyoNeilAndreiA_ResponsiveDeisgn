@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>this is a website</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="http://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+</head>
+<body>
+<section class="sub-header">
+	<nav>
+		<a href="index.html"><img src="images/marinduque-logo.png"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onclick="hideMenu()"></i>
+			<ul>
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="about-us.html">ABOUT</a></li>
+				<li><a href="municipals.html">MUNICIPALS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onclick="showMenu()"></i>
+	</nav>
+
+	<h1>Municipals</h1>
+
+</section>
+
+<!-- --------Municipals Content-------- -->
+
+
+<!-- ------BOAC----- -->
+<section class="municipals">
+	<div class="row">
+		<div class="about-col">
+			<h1>BOAC</h1>
+			<p>The capital of the province. The most populous town in the province Boac remains the center of industry, culture, economy, and education. Most government and private offices are in the municipality of Boac. It also borders all five municipalities. Mogpog to the North, Santa Cruz to the Northeast, Torrijos to the East, Buenavista to the South, and Gasan to the Southwest. Boac is named after the Tagalog word, biak, which means divided, due to the Boac River dividing the town in the geographic north and south.</p>
+			<a href="" class="button red-btn">EXPLORE NOW</a>
+		</div>
+		<div class="about-col">
+			<img src="images/boac.webp">
+		</div>
+	</div>
+</section>
+
+<!-- ---------GASAN------- -->
+<section class="municipals">
+	<div class="row left">
+		<div class="about-col">
+			<h1>GASAN</h1>
+			<p>The Cultural Nerve Center of the province. Dubbed as one of the cleanest and greenest municipalities in the Philippines, Gasan's land area covers a forest reserve in the eastern part. It is also the gateway to the island of Mindoro. Handicrafts and the famous Kalutang boasts from the town of Gasan. It was named after gasang-gasang, a local term for corals found in the municipality.</p>
+			<a href="" class="button red-btn">EXPLORE NOW</a>
+		</div>
+		<div class="about-col">
+			<img src="images/gasan.jpg">
+		</div>
+	</div>
+</section>
+<!-- --------BUENAVISTA------ -->
+<section class="municipals">
+	<div class="row">
+		<div class="about-col">
+			<h1>BUENAVISTA</h1>
+			<p>The smallest of the six municipalities. It was once part of the municipality of Gasan known as Sabang. It was named such because of the "good view" of the Tablas Strait and offshore islands.</p>
+			<a href="" class="button red-btn">EXPLORE NOW</a>
+		</div>
+		<div class="about-col">
+			<img src="images/buenavista.png">
+		</div>
+	</div>
+</section>
+<!-- -------TORRIJOS------ -->
+<section class="municipals">
+	<div class="row left">
+		<div class="about-col">
+			<h1>TORRIJOS</h1>
+			<p>Named after three purported origins; 1) from Gen. Torrijos, 2) from torrillos, referring to the cows which pastured in its vast plains, and 3) from torre y hijos, referring to the watchtower men guarding the parish. Torrijos is deemed to be the summer capital of the Province and known for locally-grown strawberries.</p>
+			<a href="" class="button red-btn">EXPLORE NOW</a>
+		</div>
+		<div class="about-col">
+			<img src="images/torrijos.JPG">
+		</div>
+	</div>
+</section>
+<!-- -----------STA CRUZ--------- -->
+<section class="municipals">
+	<div class="row">
+		<div class="about-col">
+			<h1>STA CRUZ</h1>
+			<p>The largest of all the six municipalities in terms of land area and the second most populous town after Boac . It is considered as a secondary municipality after Boac (since it is the capital). Together with Boac, it is also a first-class municipality with established industries and commercial routines.</p>
+			<a href="" class="button red-btn">EXPLORE NOW</a>
+		</div>
+		<div class="about-col">
+			<img src="images/sta-cruz.jpg">
+		</div>
+	</div>
+</section>
+<!-- ----------MOGPOG ----------->
+<section class="municipals">
+	<div class="row left">
+		<div class="about-col">
+			<h1>MOGPOG</h1>
+			<p>The Primary Gateway of the Province through the Balanacan Port. It is the original home of the Moriones Lenten Rites and Kangga Festiva. Mogpog was named after the Tagalog word, mag-aapog or kiln makers abundant in the municipality.</p>
+			<a href="" class="button red-btn">EXPLORE NOW</a>
+		</div>
+		<div class="about-col">
+			<img src="images/mogpog.JPG">
+		</div>
+	</div>
+</section>
+
+<!-- ---------Footer--------- -->
+
+<section class="footer">
+	<h4>About Us</h4>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+	<div class="icons">
+		<i class="fa fa-facebook"></i>
+		<i class="fa fa-twitter"></i>
+		<i class="fa fa-instagram"></i>
+		<i class="fa fa-linkedin"></i>
+	</div>
+	<p>Made with <i class="fa fa-heart-o"></i> by Easy tutorials</p>
+</section>
+
+<!-- Javascript Toggle Menu -->
+<script>
+	var navLinks = document.getElementById("navLinks");
+
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
